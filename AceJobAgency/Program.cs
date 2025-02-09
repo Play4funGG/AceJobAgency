@@ -33,6 +33,14 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 .AddEntityFrameworkStores<AuthDbContext>()
 .AddDefaultTokenProviders();
 
+// Add Session Services
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(20);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -50,11 +58,11 @@ if (!Directory.Exists(uploadsFolder))
     Directory.CreateDirectory(uploadsFolder);
 }
 
+// Redirect root URL ("/") based on authentication status
 app.MapGet("/", async context =>
 {
     var user = context.User;
-
-    if (user.Identity.IsAuthenticated)
+    if (user.Identity?.IsAuthenticated == true)
     {
         // Redirect authenticated users to the homepage
         context.Response.Redirect("/Index");
@@ -72,6 +80,9 @@ app.MapGet("/", async context =>
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+
+// Enable Session Middleware
+app.UseSession();
 
 // Authentication and Authorization middleware
 app.UseAuthentication();

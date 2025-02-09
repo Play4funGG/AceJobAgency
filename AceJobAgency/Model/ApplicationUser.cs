@@ -11,5 +11,7 @@ namespace AceJobAgency.Model
         public DateTime DateOfBirth { get; set; }
         public string ResumePath { get; set; }
         public string WhoAmI { get; set; }
+
+        public ICollection<UserSession> UserSessions { get; set; }
     }
 }

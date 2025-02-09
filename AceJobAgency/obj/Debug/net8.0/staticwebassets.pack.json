@@ -257,6 +257,10 @@
       "PackagePath": "staticwebassets\\uploads\\Practical Assignment (005)_v1.1.pdf"
     },
     {
+      "Id": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\wwwroot\\uploads\\Practical_Assignment_2_2024_v2.1.pdf",
+      "PackagePath": "staticwebassets\\uploads\\Practical_Assignment_2_2024_v2.1.pdf"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AceJobAgency.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

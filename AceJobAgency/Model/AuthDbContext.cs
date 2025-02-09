@@ -7,8 +7,9 @@ namespace AceJobAgency.Model
     {
         private readonly IConfiguration _configuration;
 
-        // Add DbSet for AuditLog
         public DbSet<AuditLog> AuditLogs { get; set; }
+
+        public DbSet<UserSession> UserSessions { get; set; }
 
         public AuthDbContext(IConfiguration configuration)
         {
@@ -35,6 +36,15 @@ namespace AceJobAgency.Model
                 entity.Property(a => a.UserId).IsRequired(); // Ensure UserId is required
                 entity.Property(a => a.Activity).IsRequired(); // Ensure Activity is required
                 entity.Property(a => a.Timestamp).HasDefaultValueSql("GETUTCDATE()"); // Set default timestamp
+            });
+
+            modelBuilder.Entity<UserSession>(entity =>
+            {
+                entity.HasKey(us => us.Id); // Primary key
+                entity.HasOne(us => us.User) // One-to-many relationship
+                      .WithMany(u => u.UserSessions) // ApplicationUser has many UserSessions
+                      .HasForeignKey(us => us.UserId) // Foreign key
+                      .OnDelete(DeleteBehavior.Cascade); // Cascade delete
             });
         }
     }

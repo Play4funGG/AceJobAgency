@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tCfryydkE3gGrXD3S8cCnqHngHAmTtcisvtYe8EmHcU=",
+  "Hash": "fNyFsj/vpThbdpq2w4DUSqnftk6CF4zPYzijjHzq8nQ=",
   "Source": "AceJobAgency",
   "BasePath": "_content/AceJobAgency",
   "Mode": "Default",
@@ -1250,6 +1250,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\Practical Assignment (005)_v1.1.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\wwwroot\\uploads\\Practical_Assignment_2_2024_v2.1.pdf",
+      "SourceId": "AceJobAgency",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\wwwroot\\",
+      "BasePath": "_content/AceJobAgency",
+      "RelativePath": "uploads/Practical_Assignment_2_2024_v2.1.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Practical_Assignment_2_2024_v2.1.pdf"
     }
   ]
 }
