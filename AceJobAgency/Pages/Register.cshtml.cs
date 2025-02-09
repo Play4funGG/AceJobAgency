@@ -65,11 +65,13 @@ namespace AceJobAgency.Pages
                             await RModel.Resume.CopyToAsync(stream);
                         }
 
-                        user.ResumePath = filePath; // Save the file path
+                        user.ResumePath = filePath;
+
+                        await userManager.UpdateAsync(user);
                     }
 
                     await signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToPage("Index");
+                    return RedirectToPage("Login");
                 }
 
                 foreach (var error in result.Errors)
