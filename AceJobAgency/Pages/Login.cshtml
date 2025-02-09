@@ -1,0 +1,30 @@
+﻿@page
+@model AceJobAgency.Pages.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h2>Login</h2>
+
+<form method="post">
+    <div>
+        <label asp-for="LModel.Email"></label>
+        <input asp-for="LModel.Email" />
+        <span asp-validation-for="LModel.Email" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="LModel.Password"></label>
+        <input asp-for="LModel.Password" />
+        <span asp-validation-for="LModel.Password" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="LModel.RememberMe"></label>
+        <input asp-for="LModel.RememberMe" />
+    </div>
+    <button type="submit">Login</button>
+</form>
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="text-danger">@TempData["ErrorMessage"]</div>
+}

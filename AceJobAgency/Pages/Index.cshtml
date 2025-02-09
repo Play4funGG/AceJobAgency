@@ -1,10 +1,29 @@
 ﻿@page
 @model IndexModel
+@using AceJobAgency.Model
+@using AceJobAgency.Utilities
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h2>Welcome</h2>
+
+@if (SignInManager.IsSignedIn(User))
+{
+    var user = await UserManager.GetUserAsync(User);
+    <p>Email: @user.Email</p>
+    <p>First Name: @user.FirstName</p>
+    <p>Last Name: @user.LastName</p>
+    <p>NRIC: @EncryptionHelper.Decrypt(user.EncryptedNRIC)</p>
+
+    <form method="post" asp-page="/Logout">
+        <button type="submit">Logout</button>
+    </form>
+}
+else
+{
+    <a href="/Login">Login</a>
+}

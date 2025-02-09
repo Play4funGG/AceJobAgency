@@ -1,0 +1,92 @@
+﻿@page
+@model AceJobAgency.Pages.RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h2>Register</h2>
+
+<form method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken() <!-- Add Anti-Forgery Token -->
+
+    <div>
+        <label asp-for="RModel.FirstName"></label>
+        <input asp-for="RModel.FirstName" />
+        <span asp-validation-for="RModel.FirstName" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="RModel.LastName"></label>
+        <input asp-for="RModel.LastName" />
+        <span asp-validation-for="RModel.LastName" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="RModel.Gender"></label>
+        <select asp-for="RModel.Gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <span asp-validation-for="RModel.Gender" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="RModel.NRIC"></label>
+        <input asp-for="RModel.NRIC" />
+        <span asp-validation-for="RModel.NRIC" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="RModel.Email"></label>
+        <input asp-for="RModel.Email" />
+        <span asp-validation-for="RModel.Email" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="RModel.Password"></label>
+        <input asp-for="RModel.Password" id="passwordInput" onkeyup="checkPasswordStrength()" />
+        <span asp-validation-for="RModel.Password" class="text-danger"></span>
+        <div id="passwordStrengthFeedback" class="text-info"></div>
+    </div>
+    <div>
+        <label asp-for="RModel.ConfirmPassword"></label>
+        <input asp-for="RModel.ConfirmPassword" />
+        <span asp-validation-for="RModel.ConfirmPassword" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="RModel.DateOfBirth"></label>
+        <input asp-for="RModel.DateOfBirth" type="date" />
+        <span asp-validation-for="RModel.DateOfBirth" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="RModel.Resume"></label>
+        <input asp-for="RModel.Resume" type="file" accept=".docx,.pdf" /> <!-- Restrict file types -->
+        <span asp-validation-for="RModel.Resume" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="RModel.WhoAmI"></label>
+        <textarea asp-for="RModel.WhoAmI"></textarea>
+        <span asp-validation-for="RModel.WhoAmI" class="text-danger"></span>
+    </div>
+    <button type="submit">Register</button>
+</form>
+
+<script>
+    function checkPasswordStrength() {
+        const password = document.getElementById('passwordInput').value;
+        const feedbackDiv = document.getElementById('passwordStrengthFeedback');
+        let message = '';
+
+        if (password.length < 12) {
+            message = 'Password must be at least 12 characters long.';
+        } else if (!/[a-z]/.test(password)) {
+            message = 'Password must include at least one lowercase letter.';
+        } else if (!/[A-Z]/.test(password)) {
+            message = 'Password must include at least one uppercase letter.';
+        } else if (!/\d/.test(password)) {
+            message = 'Password must include at least one number.';
+        } else if (!/[$!%*?&]/.test(password)) {
+            message = 'Password must include at least one special character ($!%*?&).';
+        } else {
+            message = 'Password is strong!';
+        }
+
+        feedbackDiv.textContent = message;
+        feedbackDiv.style.color = message === 'Password is strong!' ? 'green' : 'red';
+    }
+</script>
