@@ -22,65 +22,88 @@ namespace AceJobAgency.Pages
             this.signInManager = signInManager;
         }
 
-        public void OnGet()
-        {
-        }
-
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> OnPostAsync()
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                var user = new ApplicationUser
-                {
-                    UserName = RModel.Email,
-                    Email = RModel.Email,
-                    FirstName = RModel.FirstName,
-                    LastName = RModel.LastName,
-                    Gender = RModel.Gender,
-                    EncryptedNRIC = EncryptionHelper.Encrypt(RModel.NRIC),
-                    DateOfBirth = RModel.DateOfBirth,
-                    WhoAmI = RModel.WhoAmI,
-                    ResumePath = string.Empty // Default value if no resume is uploaded
-                };
+                TempData["ErrorMessage"] = "Invalid input. Please check your entries.";
+                return Page();
+            }
 
-                var result = await userManager.CreateAsync(user, RModel.Password);
+            // Validate email format
+            if (!IsValidEmail(RModel.Email))
+            {
+                ModelState.AddModelError("", "Invalid email format.");
+                return Page();
+            }
 
-                if (result.Succeeded)
+/*            // Validate date of birth
+            if (RModel.DateOfBirth > DateTime.UtcNow.AddYears(-18))
+            {
+                ModelState.AddModelError("", "You must be at least 18 years old.");
+                return Page();
+            }*/
+
+            var user = new ApplicationUser
+            {
+                UserName = RModel.Email,
+                Email = RModel.Email,
+                FirstName = System.Net.WebUtility.HtmlEncode(RModel.FirstName),
+                LastName = System.Net.WebUtility.HtmlEncode(RModel.LastName),
+                Gender = RModel.Gender,
+                EncryptedNRIC = EncryptionHelper.Encrypt(RModel.NRIC),
+                DateOfBirth = RModel.DateOfBirth,
+                WhoAmI = System.Net.WebUtility.HtmlEncode(RModel.WhoAmI),
+                ResumePath = string.Empty
+            };
+
+            var result = await userManager.CreateAsync(user, RModel.Password);
+            if (result.Succeeded)
+            {
+                if (RModel.Resume != null && RModel.Resume.Length > 0)
                 {
-                    // Handle file upload
-                    if (RModel.Resume != null && RModel.Resume.Length > 0)
+                    var allowedExtensions = new[] { ".docx", ".pdf" };
+                    var fileExtension = Path.GetExtension(RModel.Resume.FileName).ToLower();
+                    if (!allowedExtensions.Contains(fileExtension))
                     {
-                        var allowedExtensions = new[] { ".docx", ".pdf" };
-                        var fileExtension = Path.GetExtension(RModel.Resume.FileName).ToLower();
-
-                        if (!allowedExtensions.Contains(fileExtension))
-                        {
-                            ModelState.AddModelError("", "Only .docx and .pdf files are allowed.");
-                            return Page();
-                        }
-
-                        var filePath = Path.Combine("wwwroot", "uploads", RModel.Resume.FileName);
-                        using (var stream = new FileStream(filePath, FileMode.Create))
-                        {
-                            await RModel.Resume.CopyToAsync(stream);
-                        }
-
-                        user.ResumePath = filePath;
-
-                        await userManager.UpdateAsync(user);
+                        ModelState.AddModelError("", "Only .docx and .pdf files are allowed.");
+                        return Page();
                     }
 
-                    await signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToPage("Login");
+                    var filePath = Path.Combine("wwwroot", "uploads", RModel.Resume.FileName);
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await RModel.Resume.CopyToAsync(stream);
+                    }
+
+                    user.ResumePath = filePath;
+                    await userManager.UpdateAsync(user);
                 }
 
-                foreach (var error in result.Errors)
-                {
-                    ModelState.AddModelError("", error.Description);
-                }
+                await signInManager.SignInAsync(user, isPersistent: false);
+                return RedirectToPage("Login");
+            }
+
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError("", error.Description);
             }
 
             return Page();
+        }
+
+        private bool IsValidEmail(string email)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }
