@@ -18,8 +18,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\clara\OneDrive\Desktop\AceJobAgency\AceJobAgency
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/clara/OneDrive/Desktop/AceJobAgency/AceJobAgency/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+[C:/Users/clara/OneDrive/Desktop/AceJobAgency/AceJobAgency/Pages/Errors/400.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3JzXDQwMC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/clara/OneDrive/Desktop/AceJobAgency/AceJobAgency/Pages/Errors/403.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3JzXDQwMy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/clara/OneDrive/Desktop/AceJobAgency/AceJobAgency/Pages/Errors/404.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3JzXDQwNC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/clara/OneDrive/Desktop/AceJobAgency/AceJobAgency/Pages/Errors/500.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3JzXDUwMC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/clara/OneDrive/Desktop/AceJobAgency/AceJobAgency/Pages/Errors/502.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3JzXDUwMi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/clara/OneDrive/Desktop/AceJobAgency/AceJobAgency/Pages/Errors/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3JzXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/clara/OneDrive/Desktop/AceJobAgency/AceJobAgency/Pages/Index.cshtml]

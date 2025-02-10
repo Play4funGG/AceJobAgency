@@ -46,7 +46,10 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
+// Add HttpContextAccessor (for using sessions, etc.)
 builder.Services.AddHttpContextAccessor();
+
+// Google reCAPTCHA settings from configuration
 builder.Services.Configure<GoogleReCaptchaSettings>(builder.Configuration.GetSection("GoogleReCaptcha"));
 
 var app = builder.Build();
@@ -54,8 +57,10 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios.
+    // Global error handling
+    app.UseExceptionHandler("/Errors/Error");
+
+    // HSTS for secure connections
     app.UseHsts();
 }
 
@@ -96,6 +101,10 @@ app.UseSession();
 app.UseAuthentication();
 app.UseAuthorization();
 
+// Error handling middleware
+app.UseStatusCodePagesWithReExecute("/Errors/{0}");
+
+// Map Razor Pages
 app.MapRazorPages();
 
 app.Run();
