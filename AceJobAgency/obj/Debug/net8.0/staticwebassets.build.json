@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "isd/SpQAHM2QCtSIcaYyyPDmHDAFgXPv/yXpYxVQozs=",
+  "Hash": "qzztrgnTXubSzsCIU8pkSqSkH1aro01/d2udvrkBYzE=",
   "Source": "AceJobAgency",
   "BasePath": "_content/AceJobAgency",
   "Mode": "Default",
@@ -1250,6 +1250,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\Medical Checkup NS.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\wwwroot\\uploads\\NYP_Infosec_2024_Dec_CTF_Opening_slide.pptx.pdf",
+      "SourceId": "AceJobAgency",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\wwwroot\\",
+      "BasePath": "_content/AceJobAgency",
+      "RelativePath": "uploads/NYP_Infosec_2024_Dec_CTF_Opening_slide.pptx.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\NYP_Infosec_2024_Dec_CTF_Opening_slide.pptx.pdf"
     },
     {
       "Identity": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\wwwroot\\uploads\\Practical Assignment (005)_v1.1.pdf",

@@ -69,6 +69,13 @@ namespace AceJobAgency.Pages
                 return Page();
             }
 
+            // Enforce maximum password age
+            if (user.LastPasswordChanged.HasValue && DateTime.UtcNow - user.LastPasswordChanged.Value > TimeSpan.FromDays(90))
+            {
+                TempData["ErrorMessage"] = "Your password has expired. Please reset it.";
+                return RedirectToPage("ResetPassword");
+            }
+
             // Check if the account is locked
             if (await userManager.IsLockedOutAsync(user))
             {

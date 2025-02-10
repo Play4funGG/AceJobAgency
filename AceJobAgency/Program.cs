@@ -1,6 +1,7 @@
 using AceJobAgency.Model;
 using AceJobAgency.Utilities;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.IO;
@@ -12,6 +13,8 @@ builder.Services.AddRazorPages(options =>
 {
     options.Conventions.ConfigureFilter(new IgnoreAntiforgeryTokenAttribute());
 });
+
+builder.Services.AddTransient<IEmailSender, AceJobAgency.Utilities.EmailSender>();
 
 // Add DbContext with AuthDbContext
 builder.Services.AddDbContext<AuthDbContext>(options =>

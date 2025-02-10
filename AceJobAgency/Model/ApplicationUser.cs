@@ -13,5 +13,6 @@ namespace AceJobAgency.Model
         public string WhoAmI { get; set; }
 
         public ICollection<UserSession> UserSessions { get; set; }
+        public DateTime? LastPasswordChanged { get; set; }
     }
 }

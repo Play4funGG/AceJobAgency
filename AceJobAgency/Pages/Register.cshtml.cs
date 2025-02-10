@@ -38,12 +38,20 @@ namespace AceJobAgency.Pages
                 return Page();
             }
 
-/*            // Validate date of birth
+            // Check for duplicate email in the database
+            var existingUser = await userManager.FindByEmailAsync(RModel.Email);
+            if (existingUser != null)
+            {
+                ModelState.AddModelError("RModel.Email", "Email is already in use.");
+                return Page();
+            }
+
+            // Validate date of birth
             if (RModel.DateOfBirth > DateTime.UtcNow.AddYears(-18))
             {
                 ModelState.AddModelError("", "You must be at least 18 years old.");
                 return Page();
-            }*/
+            }
 
             var user = new ApplicationUser
             {
@@ -92,6 +100,7 @@ namespace AceJobAgency.Pages
 
             return Page();
         }
+
 
         private bool IsValidEmail(string email)
         {

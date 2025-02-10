@@ -19,6 +19,9 @@
     <p>Last Name: @user.LastName</p>
     <p>NRIC: @EncryptionHelper.Decrypt(user.EncryptedNRIC)</p>
 
+    <!-- Change Password Link -->
+    <p><a href="/ChangePassword">Change Password</a></p>
+
     <form method="post" asp-page="/Logout">
         <button type="submit">Logout</button>
     </form>

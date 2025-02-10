@@ -146,3 +146,9 @@ C:\Users\clara\OneDrive\Desktop\AceJobAgency\AceJobAgency\obj\Debug\net8.0\refin
 C:\Users\clara\OneDrive\Desktop\AceJobAgency\AceJobAgency\obj\Debug\net8.0\AceJobAgency.pdb
 C:\Users\clara\OneDrive\Desktop\AceJobAgency\AceJobAgency\obj\Debug\net8.0\AceJobAgency.genruntimeconfig.cache
 C:\Users\clara\OneDrive\Desktop\AceJobAgency\AceJobAgency\obj\Debug\net8.0\ref\AceJobAgency.dll
+C:\Users\clara\OneDrive\Desktop\AceJobAgency\AceJobAgency\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\clara\OneDrive\Desktop\AceJobAgency\AceJobAgency\bin\Debug\net8.0\MailKit.dll
+C:\Users\clara\OneDrive\Desktop\AceJobAgency\AceJobAgency\bin\Debug\net8.0\MimeKit.dll
+C:\Users\clara\OneDrive\Desktop\AceJobAgency\AceJobAgency\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\Users\clara\OneDrive\Desktop\AceJobAgency\AceJobAgency\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\clara\OneDrive\Desktop\AceJobAgency\AceJobAgency\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
