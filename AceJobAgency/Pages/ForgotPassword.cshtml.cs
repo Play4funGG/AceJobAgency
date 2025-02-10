@@ -40,7 +40,7 @@ namespace AceJobAgency.Pages
 
             // Construct the callback URL
             var callbackUrl = Url.Page(
-                "/Account/ResetPassword",
+                "/ResetPassword",
                 pageHandler: null,
                 values: new { code },
                 protocol: Request.Scheme);

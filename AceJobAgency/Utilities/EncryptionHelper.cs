@@ -6,7 +6,21 @@ namespace AceJobAgency.Utilities
 {
     public static class EncryptionHelper
     {
-        private static readonly string Key = "b14ca5898a4e4133bbce2ea2315a1916"; // Replace with a secure key
+        private static string Key;
+
+        // Static constructor to initialize the key
+        static EncryptionHelper()
+        {
+            // You can access the IConfiguration instance here (either through DI or appsettings)
+            Key = GetEncryptionKeyFromAppSettings();
+        }
+
+        private static string GetEncryptionKeyFromAppSettings()
+        {
+            // Assuming IConfiguration is already available globally in your app.
+            var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+            return configuration["AppSettings:EncryptionKey"]; // Access the key from appsettings.json
+        }
 
         public static string Encrypt(string plainText)
         {
