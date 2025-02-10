@@ -1,30 +1,54 @@
 ﻿@page
 @model AceJobAgency.Pages.LoginModel
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
 @{
     ViewData["Title"] = "Login";
 }
 
 <h2>Login</h2>
 
-<form method="post">
+<form method="post" id="loginForm">
+    @Html.AntiForgeryToken()
+
+    <!-- Email Input -->
     <div>
         <label asp-for="LModel.Email"></label>
         <input asp-for="LModel.Email" />
         <span asp-validation-for="LModel.Email" class="text-danger"></span>
     </div>
+
+    <!-- Password Input -->
     <div>
         <label asp-for="LModel.Password"></label>
-        <input asp-for="LModel.Password" />
+        <input asp-for="LModel.Password" type="password" />
         <span asp-validation-for="LModel.Password" class="text-danger"></span>
     </div>
-    <div>
-        <label asp-for="LModel.RememberMe"></label>
-        <input asp-for="LModel.RememberMe" />
-    </div>
+
+    <!-- reCAPTCHA Token Hidden Field -->
+    <input type="hidden" id="recaptchaResponse" name="RecaptchaToken" />
+
+    <!-- Submit Button -->
     <button type="submit">Login</button>
 </form>
 
-@if (TempData["ErrorMessage"] != null)
-{
-    <div class="text-danger">@TempData["ErrorMessage"]</div>
-}
+<!-- Registration Link -->
+<p>Don't have an account? <a href="/Register">Register here</a></p>
+
+<!-- Google reCAPTCHA Script -->
+<script src="https://www.google.com/recaptcha/api.js?render=@Configuration["GoogleReCaptcha:SiteKey"]"></script>
+
+<script>
+    document.getElementById('loginForm').addEventListener('submit', async function (event) {
+        event.preventDefault();
+
+        grecaptcha.ready(async function () {
+            // Get reCAPTCHA Token
+            const token = await grecaptcha.execute('@Configuration["GoogleReCaptcha:SiteKey"]', { action: 'login' });
+            document.getElementById('recaptchaResponse').value = token;
+
+            // Submit the form after getting the reCAPTCHA token
+            document.getElementById('loginForm').submit();
+        });
+    });
+</script>

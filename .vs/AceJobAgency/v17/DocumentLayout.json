@@ -3,28 +3,67 @@
   "WorkspaceRootPath": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|c:\\users\\clara\\onedrive\\desktop\\acejobagency\\acejobagency\\pages\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\pages\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|c:\\users\\clara\\onedrive\\desktop\\acejobagency\\acejobagency\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|c:\\users\\clara\\onedrive\\desktop\\acejobagency\\acejobagency\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\model\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\model\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\model\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\model\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\utilities\\googlerecaptchasettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\utilities\\googlerecaptchasettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\utilities\\encryptionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\utilities\\encryptionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\viewmodels\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\viewmodels\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AspNetAuth/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\viewmodels\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\viewmodels\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\pages\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\pages\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\pages\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\pages\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\pages\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\pages\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\model\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\model\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\migrations\\authdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,43 +74,20 @@
       "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\pages\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\model\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\model\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Migrations\\20250209074958_AddUserSession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AceJobAgency\\Migrations\\20250209074958_AddUserSession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Migrations\\20250209064730_AddAuditLog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:AceJobAgency\\Migrations\\20250209064730_AddAuditLog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|c:\\users\\clara\\onedrive\\desktop\\acejobagency\\acejobagency\\model\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\model\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\model\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\viewmodels\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\viewmodels\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|c:\\users\\clara\\onedrive\\desktop\\acejobagency\\acejobagency\\pages\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\pages\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AspNetAuth/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\pages\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\pages\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -90,24 +106,8 @@
       "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\utilities\\encryptionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\utilities\\encryptionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\viewmodels\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\viewmodels\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\acejobagency\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AspNetAuth/True/SqlTable/dbo.AspNetUserRoles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
@@ -123,6 +123,10 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AspNetAuth/True/SqlTable/dbo.AspNetRoles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Migrations\\20250209074958_AddUserSession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:AceJobAgency\\Migrations\\20250209074958_AddUserSession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -136,284 +140,56 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Index.cshtml.cs",
-              "RelativeToolTip": "AceJobAgency\\Pages\\Index.cshtml.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAwwD4AAAAaAAAA",
+              "DocumentIndex": 11,
+              "Title": "Register.cs",
+              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\ViewModels\\Register.cs",
+              "RelativeDocumentMoniker": "AceJobAgency\\ViewModels\\Register.cs",
+              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\ViewModels\\Register.cs",
+              "RelativeToolTip": "AceJobAgency\\ViewModels\\Register.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAIwBcAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T07:43:49.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-09T07:19:52.243Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Login.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Login.cshtml.cs",
-              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\Login.cshtml.cs",
-              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Login.cshtml.cs",
-              "RelativeToolTip": "AceJobAgency\\Pages\\Login.cshtml.cs",
-              "ViewState": "AQIAAFwAAAAAAAAAAADwvzoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T07:12:44.867Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Logout.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Logout.cshtml.cs",
-              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\Logout.cshtml.cs",
-              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Logout.cshtml.cs",
-              "RelativeToolTip": "AceJobAgency\\Pages\\Logout.cshtml.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAxwCIAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T07:45:48.334Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Model\\AuthDbContext.cs",
-              "RelativeDocumentMoniker": "AceJobAgency\\Model\\AuthDbContext.cs",
-              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Model\\AuthDbContext.cs",
-              "RelativeToolTip": "AceJobAgency\\Model\\AuthDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAmwBgAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T07:20:14.261Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Program.cs",
               "RelativeDocumentMoniker": "AceJobAgency\\Program.cs",
               "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Program.cs",
               "RelativeToolTip": "AceJobAgency\\Program.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAB0AAAAUAAAA",
+              "ViewState": "AQIAAC8AAAAAAAAAAADgv00AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T06:52:44.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-09T06:52:44.612Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Model\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "AceJobAgency\\Model\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Model\\ApplicationUser.cs",
-              "RelativeToolTip": "AceJobAgency\\Model\\ApplicationUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T07:20:12.325Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AuthDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Migrations\\AuthDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "AceJobAgency\\Migrations\\AuthDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Migrations\\AuthDbContextModelSnapshot.cs",
-              "RelativeToolTip": "AceJobAgency\\Migrations\\AuthDbContextModelSnapshot.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T07:20:11.192Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Logout.cshtml",
-              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Logout.cshtml",
-              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\Logout.cshtml",
-              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Logout.cshtml",
-              "RelativeToolTip": "AceJobAgency\\Pages\\Logout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-09T06:49:06.481Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Login.cshtml",
               "RelativeDocumentMoniker": "AceJobAgency\\Pages\\Login.cshtml",
               "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Login.cshtml",
               "RelativeToolTip": "AceJobAgency\\Pages\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAmAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-09T06:49:04.629Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AuditLog.cs",
-              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Model\\AuditLog.cs",
-              "RelativeDocumentMoniker": "AceJobAgency\\Model\\AuditLog.cs",
-              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Model\\AuditLog.cs",
-              "RelativeToolTip": "AceJobAgency\\Model\\AuditLog.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Login.cshtml.cs",
+              "RelativeToolTip": "AceJobAgency\\Pages\\Login.cshtml.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAswBcAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T07:20:13.107Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-09T07:12:44.867Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "20250209074958_AddUserSession.cs",
-              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Migrations\\20250209074958_AddUserSession.cs",
-              "RelativeDocumentMoniker": "AceJobAgency\\Migrations\\20250209074958_AddUserSession.cs",
-              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Migrations\\20250209074958_AddUserSession.cs",
-              "RelativeToolTip": "AceJobAgency\\Migrations\\20250209074958_AddUserSession.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T07:49:58.767Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UserSession.cs",
-              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Model\\UserSession.cs",
-              "RelativeDocumentMoniker": "AceJobAgency\\Model\\UserSession.cs",
-              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Model\\UserSession.cs",
-              "RelativeToolTip": "AceJobAgency\\Model\\UserSession.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T07:44:37.64Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "20250209064730_AddAuditLog.cs",
-              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Migrations\\20250209064730_AddAuditLog.cs",
-              "RelativeDocumentMoniker": "AceJobAgency\\Migrations\\20250209064730_AddAuditLog.cs",
-              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Migrations\\20250209064730_AddAuditLog.cs",
-              "RelativeToolTip": "AceJobAgency\\Migrations\\20250209064730_AddAuditLog.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T06:47:30.484Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\Index.cshtml",
-              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Index.cshtml",
-              "RelativeToolTip": "AceJobAgency\\Pages\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-09T06:49:01.856Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Register.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Register.cshtml.cs",
-              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\Register.cshtml.cs",
-              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Register.cshtml.cs",
-              "RelativeToolTip": "AceJobAgency\\Pages\\Register.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T07:31:15.278Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\ViewModels\\Login.cs",
-              "RelativeDocumentMoniker": "AceJobAgency\\ViewModels\\Login.cs",
-              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\ViewModels\\Login.cs",
-              "RelativeToolTip": "AceJobAgency\\ViewModels\\Login.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T07:19:48.243Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Error.cshtml",
-              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\Error.cshtml",
-              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Error.cshtml",
-              "RelativeToolTip": "AceJobAgency\\Pages\\Error.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-09T07:20:23.071Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\_ViewStart.cshtml",
-              "RelativeToolTip": "AceJobAgency\\Pages\\_ViewStart.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-09T07:20:22.064Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "dbo.AspNetUsers [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AspNetAuth/True/SqlTable/dbo.AspNetUsers.sql",
-              "ToolTip": "dbo.AspNetUsers [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-02-09T07:35:54.164Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Register.cshtml",
-              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\Register.cshtml",
-              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Register.cshtml",
-              "RelativeToolTip": "AceJobAgency\\Pages\\Register.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-09T07:12:34.296Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "EncryptionHelper.cs",
-              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Utilities\\EncryptionHelper.cs",
-              "RelativeDocumentMoniker": "AceJobAgency\\Utilities\\EncryptionHelper.cs",
-              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Utilities\\EncryptionHelper.cs",
-              "RelativeToolTip": "AceJobAgency\\Utilities\\EncryptionHelper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T07:20:55.435Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\_ViewImports.cshtml",
-              "RelativeToolTip": "AceJobAgency\\Pages\\_ViewImports.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-09T07:21:54.55Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 3,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\appsettings.Development.json",
               "RelativeDocumentMoniker": "AceJobAgency\\appsettings.Development.json",
@@ -425,7 +201,256 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\appsettings.json",
+              "RelativeDocumentMoniker": "AceJobAgency\\appsettings.json",
+              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\appsettings.json",
+              "RelativeToolTip": "AceJobAgency\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-09T07:19:51.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "dbo.AspNetUsers [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AspNetAuth/True/SqlTable/dbo.AspNetUsers.sql",
+              "ToolTip": "dbo.AspNetUsers [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-09T07:35:54.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\ViewModels\\Login.cs",
+              "RelativeDocumentMoniker": "AceJobAgency\\ViewModels\\Login.cs",
+              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\ViewModels\\Login.cs",
+              "RelativeToolTip": "AceJobAgency\\ViewModels\\Login.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T07:19:48.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "AceJobAgency\\Pages\\Index.cshtml.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAwwD4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T07:43:49.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GoogleReCaptchaSettings.cs",
+              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Utilities\\GoogleReCaptchaSettings.cs",
+              "RelativeDocumentMoniker": "AceJobAgency\\Utilities\\GoogleReCaptchaSettings.cs",
+              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Utilities\\GoogleReCaptchaSettings.cs",
+              "RelativeToolTip": "AceJobAgency\\Utilities\\GoogleReCaptchaSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T09:00:16.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Register.cshtml.cs",
+              "RelativeToolTip": "AceJobAgency\\Pages\\Register.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T07:31:15.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Register.cshtml",
+              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\Register.cshtml",
+              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Register.cshtml",
+              "RelativeToolTip": "AceJobAgency\\Pages\\Register.cshtml",
+              "ViewState": "AQIAADEAAAAAAAAAAAAAAFcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-09T07:12:34.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Model\\AuthDbContext.cs",
+              "RelativeDocumentMoniker": "AceJobAgency\\Model\\AuthDbContext.cs",
+              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Model\\AuthDbContext.cs",
+              "RelativeToolTip": "AceJobAgency\\Model\\AuthDbContext.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAADgvxAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T07:20:14.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EncryptionHelper.cs",
+              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Utilities\\EncryptionHelper.cs",
+              "RelativeDocumentMoniker": "AceJobAgency\\Utilities\\EncryptionHelper.cs",
+              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Utilities\\EncryptionHelper.cs",
+              "RelativeToolTip": "AceJobAgency\\Utilities\\EncryptionHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T07:20:55.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Logout.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Logout.cshtml.cs",
+              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\Logout.cshtml.cs",
+              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Logout.cshtml.cs",
+              "RelativeToolTip": "AceJobAgency\\Pages\\Logout.cshtml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACIAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T07:45:48.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Model\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "AceJobAgency\\Model\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Model\\ApplicationUser.cs",
+              "RelativeToolTip": "AceJobAgency\\Model\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T07:20:12.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AuthDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Migrations\\AuthDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "AceJobAgency\\Migrations\\AuthDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Migrations\\AuthDbContextModelSnapshot.cs",
+              "RelativeToolTip": "AceJobAgency\\Migrations\\AuthDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T07:20:11.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Logout.cshtml",
+              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\Logout.cshtml",
+              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Logout.cshtml",
+              "RelativeToolTip": "AceJobAgency\\Pages\\Logout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-09T06:49:06.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AuditLog.cs",
+              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Model\\AuditLog.cs",
+              "RelativeDocumentMoniker": "AceJobAgency\\Model\\AuditLog.cs",
+              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Model\\AuditLog.cs",
+              "RelativeToolTip": "AceJobAgency\\Model\\AuditLog.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T07:20:13.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20250209074958_AddUserSession.cs",
+              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Migrations\\20250209074958_AddUserSession.cs",
+              "RelativeDocumentMoniker": "AceJobAgency\\Migrations\\20250209074958_AddUserSession.cs",
+              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Migrations\\20250209074958_AddUserSession.cs",
+              "RelativeToolTip": "AceJobAgency\\Migrations\\20250209074958_AddUserSession.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T07:49:58.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserSession.cs",
+              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Model\\UserSession.cs",
+              "RelativeDocumentMoniker": "AceJobAgency\\Model\\UserSession.cs",
+              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Model\\UserSession.cs",
+              "RelativeToolTip": "AceJobAgency\\Model\\UserSession.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T07:44:37.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20250209064730_AddAuditLog.cs",
+              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Migrations\\20250209064730_AddAuditLog.cs",
+              "RelativeDocumentMoniker": "AceJobAgency\\Migrations\\20250209064730_AddAuditLog.cs",
+              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Migrations\\20250209064730_AddAuditLog.cs",
+              "RelativeToolTip": "AceJobAgency\\Migrations\\20250209064730_AddAuditLog.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T06:47:30.484Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Index.cshtml",
+              "RelativeToolTip": "AceJobAgency\\Pages\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-09T06:49:01.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\Error.cshtml",
+              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Error.cshtml",
+              "RelativeToolTip": "AceJobAgency\\Pages\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-09T07:20:23.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "AceJobAgency\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-09T07:20:22.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\_ViewImports.cshtml",
+              "RelativeToolTip": "AceJobAgency\\Pages\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-09T07:21:54.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\Privacy.cshtml",
               "RelativeDocumentMoniker": "AceJobAgency\\Pages\\Privacy.cshtml",
@@ -437,19 +462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Register.cs",
-              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\ViewModels\\Register.cs",
-              "RelativeDocumentMoniker": "AceJobAgency\\ViewModels\\Register.cs",
-              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\ViewModels\\Register.cs",
-              "RelativeToolTip": "AceJobAgency\\ViewModels\\Register.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAwwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T07:19:52.243Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "AceJobAgency\\Properties\\launchSettings.json",
@@ -458,18 +471,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-02-09T07:20:07.911Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\appsettings.json",
-              "RelativeDocumentMoniker": "AceJobAgency\\appsettings.json",
-              "ToolTip": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\appsettings.json",
-              "RelativeToolTip": "AceJobAgency\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-09T07:19:51.717Z"
             },
             {
               "$type": "Document",

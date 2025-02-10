@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fNyFsj/vpThbdpq2w4DUSqnftk6CF4zPYzijjHzq8nQ=",
+  "Hash": "isd/SpQAHM2QCtSIcaYyyPDmHDAFgXPv/yXpYxVQozs=",
   "Source": "AceJobAgency",
   "BasePath": "_content/AceJobAgency",
   "Mode": "Default",
@@ -1231,6 +1231,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\Galaxy80_manual.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\wwwroot\\uploads\\Medical Checkup NS.pdf",
+      "SourceId": "AceJobAgency",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\wwwroot\\",
+      "BasePath": "_content/AceJobAgency",
+      "RelativePath": "uploads/Medical Checkup NS.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Medical Checkup NS.pdf"
     },
     {
       "Identity": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\wwwroot\\uploads\\Practical Assignment (005)_v1.1.pdf",

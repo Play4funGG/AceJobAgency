@@ -4,7 +4,12 @@ using AceJobAgency.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Options;
+using System.Net.Http;
+using System.Text.Json;
 using System.Threading.Tasks;
+using System.Linq;
+using System;
 
 namespace AceJobAgency.Pages
 {
@@ -13,18 +18,24 @@ namespace AceJobAgency.Pages
         private readonly SignInManager<ApplicationUser> signInManager;
         private readonly UserManager<ApplicationUser> userManager;
         private readonly AuthDbContext dbContext;
+        private readonly GoogleReCaptchaSettings googleReCaptchaSettings;
 
         [BindProperty]
         public Login LModel { get; set; }
 
+        [BindProperty]
+        public string RecaptchaToken { get; set; }
+
         public LoginModel(
             SignInManager<ApplicationUser> signInManager,
             UserManager<ApplicationUser> userManager,
-            AuthDbContext dbContext)
+            AuthDbContext dbContext,
+            IOptions<GoogleReCaptchaSettings> googleReCaptchaSettings)
         {
             this.signInManager = signInManager;
             this.userManager = userManager;
             this.dbContext = dbContext;
+            this.googleReCaptchaSettings = googleReCaptchaSettings.Value;
         }
 
         public void OnGet()
@@ -35,11 +46,26 @@ namespace AceJobAgency.Pages
         {
             if (ModelState.IsValid)
             {
+                // Validate reCAPTCHA
+                var isCaptchaValid = await ValidateReCaptcha(RecaptchaToken);
+                if (!isCaptchaValid)
+                {
+                    TempData["ErrorMessage"] = "reCAPTCHA validation failed. Please try again.";
+                    return Page();
+                }
+
                 var user = await userManager.FindByEmailAsync(LModel.Email);
 
-                if (user == null || await userManager.IsLockedOutAsync(user))
+                if (user == null)
                 {
-                    TempData["ErrorMessage"] = "Account is locked or invalid credentials.";
+                    TempData["ErrorMessage"] = "Invalid email or password.";
+                    return Page();
+                }
+
+                // Check if the account is locked
+                if (await userManager.IsLockedOutAsync(user))
+                {
+                    TempData["ErrorMessage"] = "Account is locked out due to too many failed attempts. Try again later.";
                     return Page();
                 }
 
@@ -61,6 +87,7 @@ namespace AceJobAgency.Pages
                     return Page();
                 }
 
+                // Attempt sign-in
                 var result = await signInManager.PasswordSignInAsync(user, LModel.Password, LModel.RememberMe, lockoutOnFailure: true);
 
                 if (result.Succeeded)
@@ -101,6 +128,30 @@ namespace AceJobAgency.Pages
             return Page();
         }
 
+        private async Task<bool> ValidateReCaptcha(string token)
+        {
+            if (string.IsNullOrWhiteSpace(token))
+            {
+                return false;
+            }
+
+            using var client = new HttpClient();
+            var response = await client.PostAsync(
+                $"https://www.google.com/recaptcha/api/siteverify?secret={googleReCaptchaSettings.SecretKey}&response={token}",
+                null);
+
+            var content = await response.Content.ReadAsStringAsync();
+
+            var recaptchaResponse = JsonSerializer.Deserialize<RecaptchaResponse>(content);
+
+            if (recaptchaResponse == null || !recaptchaResponse.success || recaptchaResponse.score < 0.5)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
         private async Task LogActivity(string userId, string activity)
         {
             var auditLog = new AuditLog
@@ -111,6 +162,15 @@ namespace AceJobAgency.Pages
 
             dbContext.AuditLogs.Add(auditLog);
             await dbContext.SaveChangesAsync();
+        }
+
+        private class RecaptchaResponse
+        {
+            public bool success { get; set; }
+            public float score { get; set; }
+            public string action { get; set; }
+            public string challenge_ts { get; set; }
+            public string hostname { get; set; }
         }
     }
 }

@@ -1,12 +1,17 @@
 using AceJobAgency.Model;
+using AceJobAgency.Utilities;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.IO;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorPages();
+builder.Services.AddRazorPages(options =>
+{
+    options.Conventions.ConfigureFilter(new IgnoreAntiforgeryTokenAttribute());
+});
 
 // Add DbContext with AuthDbContext
 builder.Services.AddDbContext<AuthDbContext>(options =>
@@ -40,6 +45,9 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
+
+builder.Services.AddHttpContextAccessor();
+builder.Services.Configure<GoogleReCaptchaSettings>(builder.Configuration.GetSection("GoogleReCaptcha"));
 
 var app = builder.Build();
 
