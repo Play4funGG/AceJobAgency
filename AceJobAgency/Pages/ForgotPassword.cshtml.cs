@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Encodings.Web;
 
 namespace AceJobAgency.Pages
 {
@@ -29,11 +30,11 @@ namespace AceJobAgency.Pages
             }
 
             var user = await _userManager.FindByEmailAsync(Input.Email);
-            if (user == null || !(await _userManager.IsEmailConfirmedAsync(user)))
+/*            if (user == null || !(await _userManager.IsEmailConfirmedAsync(user)))
             {
                 // Don't reveal that the user does not exist or is not confirmed
                 return RedirectToPage("ForgotPasswordConfirmation");
-            }
+            }*/
 
             // Generate password reset token
             var code = await _userManager.GeneratePasswordResetTokenAsync(user);
@@ -46,7 +47,9 @@ namespace AceJobAgency.Pages
                 protocol: Request.Scheme);
 
             // Send the password reset email
-            await _emailSender.SendEmailAsync(user.Id, "Reset Password", $"Please reset your password by <a href='{callbackUrl}'>clicking here</a>.");
+            Console.WriteLine("Attempting to send email to: " + user.Email);
+            await _emailSender.SendEmailAsync(user.Email, "Reset Password", $"Please reset your password by <a href=\"{HtmlEncoder.Default.Encode(callbackUrl)}\">clicking here</a>.");
+            Console.WriteLine("Email sent.");
 
             return RedirectToPage("ForgotPasswordConfirmation");
         }

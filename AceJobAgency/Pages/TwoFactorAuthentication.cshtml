@@ -1,0 +1,18 @@
+﻿@page
+@model AceJobAgency.Pages.TwoFactorAuthenticationModel
+@{
+    ViewData["Title"] = "Two-Factor Authentication";
+}
+
+<h2>Two-Factor Authentication</h2>
+
+@if (Model.HasAuthenticator)
+{
+    <p>Authenticator app is enabled.</p>
+    <a href="/DisableAuthenticator">Disable Authenticator</a>
+}
+else
+{
+    <p>Authenticator app is not enabled.</p>
+    <a href="/EnableAuthenticator">Enable Authenticator</a>
+}

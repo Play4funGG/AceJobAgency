@@ -23,7 +23,7 @@ namespace AceJobAgency.Utilities
 
             using var client = new SmtpClient();
             await client.ConnectAsync("smtp.gmail.com", 587, false);
-            await client.AuthenticateAsync("clarancewebdev@gmail.com", "12ab34cd!?");
+            await client.AuthenticateAsync("clarancewebdev@gmail.com", "kofe sboz sqwf xspn");
             await client.SendAsync(emailMessage);
             await client.DisconnectAsync(true);
         }
