@@ -1,0 +1,21 @@
+﻿@page
+@model OTPVerificationModel
+@{
+    ViewData["Title"] = "OTP Verification";
+}
+
+<h2>Enter OTP</h2>
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+<form method="post">
+    <div class="form-group">
+        <label for="OTPInput">Enter OTP Code:</label>
+        <input type="text" id="OTPInput" asp-for="OTPCode" class="form-control" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Verify OTP</button>
+</form>

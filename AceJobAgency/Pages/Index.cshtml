@@ -11,22 +11,38 @@
 
 <h2>Welcome</h2>
 
-@if (SignInManager.IsSignedIn(User))
+@{
+    // Retrieve UserId from session to check if user is signed in
+    var userId = HttpContext.Session.GetString("UserId");
+}
+
+@if (!string.IsNullOrEmpty(userId))
 {
-    var user = await UserManager.GetUserAsync(User);
-    <p>Email: @user.Email</p>
-    <p>First Name: @user.FirstName</p>
-    <p>Last Name: @user.LastName</p>
-    <p>NRIC: @EncryptionHelper.Decrypt(user.EncryptedNRIC)</p>
+    // If UserId exists in session, the user is signed in
+    var user = await UserManager.FindByIdAsync(userId);
 
-    <!-- Change Password Link -->
-    <p><a href="/ChangePassword">Change Password</a></p>
+    if (user != null)
+    {
+        <p>Email: @user.Email</p>
+        <p>First Name: @user.FirstName</p>
+        <p>Last Name: @user.LastName</p>
+        <p>NRIC: @EncryptionHelper.Decrypt(user.EncryptedNRIC)</p>
 
-    <form method="post" asp-page="/Logout">
-        <button type="submit">Logout</button>
-    </form>
+        <!-- Change Password Link -->
+        <p><a href="/ChangePassword">Change Password</a></p>
+
+        <!-- Logout form -->
+        <form method="post" asp-page="/Logout">
+            <button type="submit">Logout</button>
+        </form>
+    }
+    else
+    {
+        <p>User not found in session. Please log in again.</p>
+    }
 }
 else
 {
+    <!-- Display login link if no userId in session -->
     <a href="/Login">Login</a>
 }

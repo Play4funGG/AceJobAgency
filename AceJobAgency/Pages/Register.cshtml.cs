@@ -22,6 +22,15 @@ namespace AceJobAgency.Pages
             this.signInManager = signInManager;
         }
 
+        // OTP generation logic (6 digits)
+        private string GenerateOTP()
+        {
+            var random = new Random();
+            var otp = random.Next(100000, 999999).ToString(); // Generates a 6-digit OTP
+            return otp;
+        }
+
+
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> OnPostAsync()
         {
@@ -64,7 +73,7 @@ namespace AceJobAgency.Pages
                 DateOfBirth = RModel.DateOfBirth,
                 WhoAmI = System.Net.WebUtility.HtmlEncode(RModel.WhoAmI),
                 ResumePath = string.Empty,
-                LastPasswordChanged = DateTime.UtcNow // Set the timestamp
+                LastPasswordChanged = DateTime.UtcNow, // Set the timestamp
             };
 
             var result = await userManager.CreateAsync(user, RModel.Password);

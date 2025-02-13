@@ -10,6 +10,8 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using System.Linq;
 using System;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.AspNetCore.Http;
 
 namespace AceJobAgency.Pages
 {
@@ -19,6 +21,7 @@ namespace AceJobAgency.Pages
         private readonly UserManager<ApplicationUser> userManager;
         private readonly AuthDbContext dbContext;
         private readonly GoogleReCaptchaSettings googleReCaptchaSettings;
+        private readonly IEmailSender _emailSender;
 
         [BindProperty]
         public Login LModel { get; set; }
@@ -40,18 +43,18 @@ namespace AceJobAgency.Pages
             SignInManager<ApplicationUser> signInManager,
             UserManager<ApplicationUser> userManager,
             AuthDbContext dbContext,
-            IOptions<GoogleReCaptchaSettings> googleReCaptchaSettings)
+            IOptions<GoogleReCaptchaSettings> googleReCaptchaSettings,
+            IEmailSender emailSender)
         {
             this.signInManager = signInManager;
             this.userManager = userManager;
             this.dbContext = dbContext;
             this.googleReCaptchaSettings = googleReCaptchaSettings.Value;
+            this._emailSender = emailSender;
         }
 
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> OnPostAsync()
         {
-            // Validate model state
             if (!ModelState.IsValid)
             {
                 TempData["ErrorMessage"] = "Invalid input. Please check your entries.";
@@ -66,14 +69,7 @@ namespace AceJobAgency.Pages
                 return Page();
             }
 
-            // Validate email format
-            if (!IsValidEmail(LModel.Email))
-            {
-                TempData["ErrorMessage"] = "Invalid email format.";
-                return Page();
-            }
-
-            // Find the user by email
+            // Find the user
             var user = await userManager.FindByEmailAsync(LModel.Email);
             if (user == null)
             {
@@ -84,47 +80,39 @@ namespace AceJobAgency.Pages
             // Check if the account is locked
             if (await userManager.IsLockedOutAsync(user))
             {
-                TempData["ErrorMessage"] = "Account is locked out due to too many failed attempts. Try again later.";
+                TempData["ErrorMessage"] = "Account is locked. Try again later.";
                 return Page();
             }
 
-            // Attempt sign-in
-            var result = await signInManager.PasswordSignInAsync(user, LModel.Password, LModel.RememberMe, lockoutOnFailure: true);
-
-            if (result.Succeeded)
+            // Check password
+            var passwordValid = await userManager.CheckPasswordAsync(user, LModel.Password);
+            if (!passwordValid)
             {
-                // Log successful login activity
-                await LogActivity(user.Id, "Successful Login");
-
-                // Create a new session
-                var sessionId = Guid.NewGuid().ToString();
-                var userSession = new UserSession
-                {
-                    UserId = user.Id,
-                    SessionId = sessionId,
-                    LastActivity = DateTime.UtcNow
-                };
-
-                dbContext.UserSessions.Add(userSession);
-                await dbContext.SaveChangesAsync();
-
-                // Store session information
-                HttpContext.Session.SetString("SessionId", sessionId);
-                HttpContext.Session.SetString("UserId", user.Id);
-
-                return RedirectToPage("Index");
-            }
-
-            if (result.IsLockedOut)
-            {
-                TempData["ErrorMessage"] = "Account locked out due to too many failed attempts. Try again later.";
+                TempData["ErrorMessage"] = "Invalid email or password.";
+                await LogActivity(user.Id, "Failed Login Attempt");
                 return Page();
             }
 
-            // Log failed login attempt
-            await LogActivity(user.Id, "Failed Login Attempt");
-            TempData["ErrorMessage"] = "Invalid email or password.";
-            return Page();
+            // Generate OTP (6-digit code)
+            var otp = new Random().Next(100000, 999999).ToString();
+
+            // Store OTP in TempData (valid for the next request)
+            TempData["OTPCode"] = otp;
+            TempData["OTPExpiry"] = DateTime.UtcNow.AddMinutes(5); // Set expiry time
+
+            // Send OTP via email
+            await SendOTPEmail(user.Email, otp);
+
+            // Store the UserId in the session
+            HttpContext.Session.SetString("UserId", user.Id);
+
+            return RedirectToPage("OTPVerification"); // Redirect to OTP verification page
+        }
+
+        private async Task SendOTPEmail(string email, string otp)
+        {
+            await _emailSender.SendEmailAsync(email, "Your OTP Code",
+                $"Your OTP code is: <strong>{otp}</strong>. It will expire in 5 minutes.");
         }
 
         private bool IsValidEmail(string email)
@@ -160,7 +148,6 @@ namespace AceJobAgency.Pages
             var content = await response.Content.ReadAsStringAsync();
             var recaptchaResponse = JsonSerializer.Deserialize<RecaptchaResponse>(content);
 
-            // Handle failed reCAPTCHA validation
             return recaptchaResponse?.success == true && recaptchaResponse.score >= 0.5;
         }
 

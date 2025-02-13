@@ -14,6 +14,7 @@ builder.Services.AddRazorPages(options =>
     options.Conventions.ConfigureFilter(new IgnoreAntiforgeryTokenAttribute());
 });
 
+// Email sender service
 builder.Services.AddTransient<IEmailSender, AceJobAgency.Utilities.EmailSender>();
 
 // Add DbContext with AuthDbContext
@@ -38,14 +39,16 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
     // User settings
     options.User.RequireUniqueEmail = true;
 
-    //// 2FA settings
-    //options.SignIn.RequireConfirmedAccount = true; // Require email confirmation
+    // 2FA settings
     options.Tokens.AuthenticatorTokenProvider = TokenOptions.DefaultAuthenticatorProvider;
 })
 .AddEntityFrameworkStores<AuthDbContext>()
 .AddDefaultTokenProviders();
 
-// Add Session Services
+// Add Distributed Memory Cache for Sessions
+builder.Services.AddDistributedMemoryCache();
+
+// Add Session Services & Ensure Data Persists
 builder.Services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromMinutes(20);
@@ -53,11 +56,13 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
-// Add HttpContextAccessor (for using sessions, etc.)
+// Add HttpContextAccessor (for using sessions)
 builder.Services.AddHttpContextAccessor();
 
 // Google reCAPTCHA settings from configuration
 builder.Services.Configure<GoogleReCaptchaSettings>(builder.Configuration.GetSection("GoogleReCaptcha"));
+
+builder.Services.AddSingleton<IEmailSender, EmailSender>();
 
 var app = builder.Build();
 
@@ -78,6 +83,21 @@ if (!Directory.Exists(uploadsFolder))
     Directory.CreateDirectory(uploadsFolder);
 }
 
+// Move Session Middleware ABOVE Authentication
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseRouting();
+
+// Enable Session BEFORE authentication to prevent session loss
+app.UseSession();
+
+// Authentication and Authorization middleware
+app.UseAuthentication();
+app.UseAuthorization();
+
+// Error handling middleware
+app.UseStatusCodePagesWithReExecute("/Errors/{0}");
+
 // Redirect root URL ("/") based on authentication status
 app.MapGet("/", async context =>
 {
@@ -95,21 +115,6 @@ app.MapGet("/", async context =>
 
     await Task.CompletedTask;
 });
-
-// Middleware pipeline
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-app.UseRouting();
-
-// Enable Session Middleware
-app.UseSession();
-
-// Authentication and Authorization middleware
-app.UseAuthentication();
-app.UseAuthorization();
-
-// Error handling middleware
-app.UseStatusCodePagesWithReExecute("/Errors/{0}");
 
 // Map Razor Pages
 app.MapRazorPages();
