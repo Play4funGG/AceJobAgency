@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Clarance\\Desktop\\AceJobAgency\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|c:\\users\\clarance\\desktop\\acejobagency\\acejobagency\\model\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\model\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|c:\\users\\clarance\\desktop\\acejobagency\\acejobagency\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|c:\\users\\clarance\\desktop\\acejobagency\\acejobagency\\pages\\resetpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\pages\\resetpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|c:\\users\\clarance\\desktop\\acejobagency\\acejobagency\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|c:\\users\\clarance\\desktop\\acejobagency\\acejobagency\\pages\\forgotpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\pages\\forgotpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|c:\\users\\clarance\\desktop\\acejobagency\\acejobagency\\model\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|solutionrelative:acejobagency\\model\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9875DEE-817F-4DBA-9997-AAF6115FBACC}|AceJobAgency\\AceJobAgency.csproj|c:\\users\\clarance\\desktop\\acejobagency\\acejobagency\\pages\\twofactorauthentication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -231,8 +231,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResetPassword.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Clarance\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\ResetPassword.cshtml.cs",
+              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\ResetPassword.cshtml.cs",
+              "ToolTip": "C:\\Users\\Clarance\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\ResetPassword.cshtml.cs",
+              "RelativeToolTip": "AceJobAgency\\Pages\\ResetPassword.cshtml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAwwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T05:29:18.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Clarance\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\ResetPassword.cshtml",
+              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\ResetPassword.cshtml",
+              "ToolTip": "C:\\Users\\Clarance\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\ResetPassword.cshtml",
+              "RelativeToolTip": "AceJobAgency\\Pages\\ResetPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-12T05:29:04.394Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
@@ -260,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Clarance\\Desktop\\AceJobAgency\\AceJobAgency\\Program.cs",
               "RelativeDocumentMoniker": "AceJobAgency\\Program.cs",
@@ -273,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ForgotPassword.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Clarance\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\ForgotPassword.cshtml.cs",
               "RelativeDocumentMoniker": "AceJobAgency\\Pages\\ForgotPassword.cshtml.cs",
@@ -299,45 +325,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Clarance\\Desktop\\AceJobAgency\\AceJobAgency\\Model\\AuthDbContext.cs",
-              "RelativeDocumentMoniker": "AceJobAgency\\Model\\AuthDbContext.cs",
-              "ToolTip": "C:\\Users\\Clarance\\Desktop\\AceJobAgency\\AceJobAgency\\Model\\AuthDbContext.cs",
-              "RelativeToolTip": "AceJobAgency\\Model\\AuthDbContext.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAvwBIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T07:20:14.261Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ResetPassword.cshtml",
-              "DocumentMoniker": "C:\\Users\\Clarance\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\ResetPassword.cshtml",
-              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\ResetPassword.cshtml",
-              "ToolTip": "C:\\Users\\Clarance\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\ResetPassword.cshtml",
-              "RelativeToolTip": "AceJobAgency\\Pages\\ResetPassword.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-12T05:29:04.394Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ResetPassword.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Clarance\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\ResetPassword.cshtml.cs",
-              "RelativeDocumentMoniker": "AceJobAgency\\Pages\\ResetPassword.cshtml.cs",
-              "ToolTip": "C:\\Users\\Clarance\\Desktop\\AceJobAgency\\AceJobAgency\\Pages\\ResetPassword.cshtml.cs",
-              "RelativeToolTip": "AceJobAgency\\Pages\\ResetPassword.cshtml.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAADgv1gAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T05:29:18.897Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Clarance\\Desktop\\AceJobAgency\\AceJobAgency\\appsettings.Development.json",
@@ -347,6 +334,19 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-02-09T07:20:51.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Clarance\\Desktop\\AceJobAgency\\AceJobAgency\\Model\\AuthDbContext.cs",
+              "RelativeDocumentMoniker": "AceJobAgency\\Model\\AuthDbContext.cs",
+              "ToolTip": "C:\\Users\\Clarance\\Desktop\\AceJobAgency\\AceJobAgency\\Model\\AuthDbContext.cs",
+              "RelativeToolTip": "AceJobAgency\\Model\\AuthDbContext.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAvwBsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T07:20:14.261Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

@@ -3,7 +3,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.WebUtilities;
 using System.ComponentModel.DataAnnotations;
+using System.Net;
 using System.Text.Encodings.Web;
 
 namespace AceJobAgency.Pages
@@ -30,26 +32,38 @@ namespace AceJobAgency.Pages
             }
 
             var user = await _userManager.FindByEmailAsync(Input.Email);
-/*            if (user == null || !(await _userManager.IsEmailConfirmedAsync(user)))
+            if (user == null)
             {
-                // Don't reveal that the user does not exist or is not confirmed
+                // Don't reveal that the user does not exist
                 return RedirectToPage("ForgotPasswordConfirmation");
-            }*/
+            }
 
             // Generate password reset token
             var code = await _userManager.GeneratePasswordResetTokenAsync(user);
+            if (string.IsNullOrEmpty(code))
+            {
+                Console.WriteLine("Error: Generated reset token is null or empty.");
+                return RedirectToPage("/Errors/Error");
+            }
 
-            // Construct the callback URL
+            var encodedCode = WebEncoders.Base64UrlEncode(System.Text.Encoding.UTF8.GetBytes(code));
+
+            // Construct the callback URL properly with UserId and Code as query parameters
             var callbackUrl = Url.Page(
                 "/ResetPassword",
                 pageHandler: null,
-                values: new { code },
+                values: new { userId = user.Id, code = encodedCode },
                 protocol: Request.Scheme);
 
-            // Send the password reset email
-            Console.WriteLine("Attempting to send email to: " + user.Email);
-            await _emailSender.SendEmailAsync(user.Email, "Reset Password", $"Please reset your password by <a href=\"{HtmlEncoder.Default.Encode(callbackUrl)}\">clicking here</a>.");
-            Console.WriteLine("Email sent.");
+            if (string.IsNullOrEmpty(callbackUrl))
+            {
+                Console.WriteLine("Error: Generated callbackUrl is null or empty.");
+                return RedirectToPage("Error");
+            }
+
+            // Send the password reset email with proper HTML
+            await _emailSender.SendEmailAsync(user.Email, "Reset Password",
+                $"<p>Please reset your password by <a href=\"{HtmlEncoder.Default.Encode(callbackUrl)}\">clicking here</a>.</p>");
 
             return RedirectToPage("ForgotPasswordConfirmation");
         }

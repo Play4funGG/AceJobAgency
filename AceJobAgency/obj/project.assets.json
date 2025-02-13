@@ -4430,23 +4430,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\clara\\.nuget\\packages\\": {},
+    "C:\\Users\\Clarance\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\AceJobAgency.csproj",
+      "projectUniqueName": "C:\\Users\\Clarance\\Desktop\\AceJobAgency\\AceJobAgency\\AceJobAgency.csproj",
       "projectName": "AceJobAgency",
-      "projectPath": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\AceJobAgency.csproj",
-      "packagesPath": "C:\\Users\\clara\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\clara\\OneDrive\\Desktop\\AceJobAgency\\AceJobAgency\\obj\\",
+      "projectPath": "C:\\Users\\Clarance\\Desktop\\AceJobAgency\\AceJobAgency\\AceJobAgency.csproj",
+      "packagesPath": "C:\\Users\\Clarance\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Clarance\\Desktop\\AceJobAgency\\AceJobAgency\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\clara\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Clarance\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4525,7 +4525,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

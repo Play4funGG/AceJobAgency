@@ -38,8 +38,8 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
     // User settings
     options.User.RequireUniqueEmail = true;
 
-    // 2FA settings
-    options.SignIn.RequireConfirmedAccount = true; // Require email confirmation
+    //// 2FA settings
+    //options.SignIn.RequireConfirmedAccount = true; // Require email confirmation
     options.Tokens.AuthenticatorTokenProvider = TokenOptions.DefaultAuthenticatorProvider;
 })
 .AddEntityFrameworkStores<AuthDbContext>()

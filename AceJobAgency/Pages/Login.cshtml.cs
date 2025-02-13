@@ -26,6 +26,16 @@ namespace AceJobAgency.Pages
         [BindProperty]
         public string RecaptchaToken { get; set; }
 
+        public string SuccessMessage { get; set; }
+
+        public void OnGet()
+        {
+            if (TempData["ResetSuccess"] != null)
+            {
+                SuccessMessage = TempData["ResetSuccess"].ToString();
+            }
+        }
+
         public LoginModel(
             SignInManager<ApplicationUser> signInManager,
             UserManager<ApplicationUser> userManager,
@@ -41,6 +51,7 @@ namespace AceJobAgency.Pages
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> OnPostAsync()
         {
+            // Validate model state
             if (!ModelState.IsValid)
             {
                 TempData["ErrorMessage"] = "Invalid input. Please check your entries.";
@@ -62,18 +73,12 @@ namespace AceJobAgency.Pages
                 return Page();
             }
 
+            // Find the user by email
             var user = await userManager.FindByEmailAsync(LModel.Email);
             if (user == null)
             {
                 TempData["ErrorMessage"] = "Invalid email or password.";
                 return Page();
-            }
-
-            // Enforce maximum password age
-            if (user.LastPasswordChanged.HasValue && DateTime.UtcNow - user.LastPasswordChanged.Value > TimeSpan.FromDays(90))
-            {
-                TempData["ErrorMessage"] = "Your password has expired. Please reset it.";
-                return RedirectToPage("ResetPassword");
             }
 
             // Check if the account is locked
@@ -83,28 +88,15 @@ namespace AceJobAgency.Pages
                 return Page();
             }
 
-            // Check for active sessions to prevent multiple logins
-            var activeSessions = dbContext.UserSessions
-                .Where(s => s.UserId == user.Id && s.LastActivity > DateTime.UtcNow.AddMinutes(-20))
-                .ToList();
-
-            if (activeSessions.Any())
-            {
-                foreach (var session in activeSessions)
-                {
-                    dbContext.UserSessions.Remove(session);
-                }
-                await dbContext.SaveChangesAsync();
-                TempData["ErrorMessage"] = "You have been logged out from another device.";
-                return Page();
-            }
-
             // Attempt sign-in
             var result = await signInManager.PasswordSignInAsync(user, LModel.Password, LModel.RememberMe, lockoutOnFailure: true);
+
             if (result.Succeeded)
             {
+                // Log successful login activity
                 await LogActivity(user.Id, "Successful Login");
 
+                // Create a new session
                 var sessionId = Guid.NewGuid().ToString();
                 var userSession = new UserSession
                 {
@@ -116,6 +108,7 @@ namespace AceJobAgency.Pages
                 dbContext.UserSessions.Add(userSession);
                 await dbContext.SaveChangesAsync();
 
+                // Store session information
                 HttpContext.Session.SetString("SessionId", sessionId);
                 HttpContext.Session.SetString("UserId", user.Id);
 
@@ -128,6 +121,7 @@ namespace AceJobAgency.Pages
                 return Page();
             }
 
+            // Log failed login attempt
             await LogActivity(user.Id, "Failed Login Attempt");
             TempData["ErrorMessage"] = "Invalid email or password.";
             return Page();
@@ -158,9 +152,15 @@ namespace AceJobAgency.Pages
                 $"https://www.google.com/recaptcha/api/siteverify?secret={googleReCaptchaSettings.SecretKey}&response={token}",
                 null);
 
+            if (!response.IsSuccessStatusCode)
+            {
+                return false;
+            }
+
             var content = await response.Content.ReadAsStringAsync();
             var recaptchaResponse = JsonSerializer.Deserialize<RecaptchaResponse>(content);
 
+            // Handle failed reCAPTCHA validation
             return recaptchaResponse?.success == true && recaptchaResponse.score >= 0.5;
         }
 

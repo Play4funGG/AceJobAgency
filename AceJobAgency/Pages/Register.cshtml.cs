@@ -63,7 +63,8 @@ namespace AceJobAgency.Pages
                 EncryptedNRIC = EncryptionHelper.Encrypt(RModel.NRIC),
                 DateOfBirth = RModel.DateOfBirth,
                 WhoAmI = System.Net.WebUtility.HtmlEncode(RModel.WhoAmI),
-                ResumePath = string.Empty
+                ResumePath = string.Empty,
+                LastPasswordChanged = DateTime.UtcNow // Set the timestamp
             };
 
             var result = await userManager.CreateAsync(user, RModel.Password);
