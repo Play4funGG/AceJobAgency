@@ -52,7 +52,7 @@ namespace AceJobAgency.Pages
             };
         }
 
-
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> OnPostAsync()
         {
             Console.WriteLine($"UserId: {Input.UserId}");

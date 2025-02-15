@@ -47,6 +47,7 @@ public class OTPVerificationModel : PageModel
         }
     }
 
+    [ValidateAntiForgeryToken]
     public async Task<IActionResult> OnPostAsync()
     {
         if (string.IsNullOrEmpty(OTPCode))
@@ -55,7 +56,7 @@ public class OTPVerificationModel : PageModel
             return Page();
         }
 
-        // Retrieve UserId from session
+        // Retrieve UserId from sessionx
         UserId = HttpContext.Session.GetString("UserId");
         if (string.IsNullOrEmpty(UserId))
         {

@@ -53,6 +53,7 @@ namespace AceJobAgency.Pages
             this._emailSender = emailSender;
         }
 
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
